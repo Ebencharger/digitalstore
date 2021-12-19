@@ -1,0 +1,123 @@
+::-webkit-scrollbar{
+    // position: absolute;
+    background-color: #007bff;
+    border-radius: 70px;
+}
+
+.head{
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    z-index: 4000;
+    top: 90px;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    padding-right: 40px;
+    transition: all 2s;
+    button{
+        border: none;
+        background-color: transparent;
+        width: 150px;
+        margin-left: 30px;
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+.bodycard{
+ width: 100%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap; 
+padding-left: 20px;
+padding-right: 20px;
+padding-top:20px ;
+ .phonebody{
+     width: 24%;
+     height: 430px;
+     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+     margin-bottom: 60px;
+     position: relative;
+     text-align: center;
+     align-items: center;
+     padding: 10px;
+     transition: all 1s;
+     &:hover{
+         box-shadow: 0px 0px 4px rgba($color:#007bff, $alpha: 0.7);
+         transition: all 2s;
+     }
+     img{
+         width: 90%;
+         margin-top: 20px;
+         margin-bottom: 10px;
+     }
+    button{
+        position: absolute;
+        bottom: 0px;
+    }
+ } 
+}
+
+
+@media (max-width:1024px){
+    .phonebody{
+        min-width:30%
+    }
+  }
+  @media (max-width:768px){
+    .phonebody{
+        min-width:50%
+    }
+  }
+  @media(max-width:736px){
+    .phonebody{
+      height: 460px !important;
+    }
+  }
+  @media(max-width:731px){
+    .phonebody{
+      height: 460px !important;
+    }
+  }
+  @media (max-width:414px){
+    .phonebody{
+        min-width:100%;
+        max-height: 500px !important;
+    }
+  }
+  @media (max-width:540px){
+    .phonebody{
+        min-width:100%;
+        height: 600px !important;
+    }
+  }
+  @media (max-width:375px){
+    .phonebody{
+        min-width:100%;
+        height: 460px !important;
+    }
+  }
+  @media (max-width:360px){
+    .phonebody{
+        min-width:100%;
+        height: 460px !important;
+    }
+  }
+  
+  @media (max-width:320px){
+    .phonebody{
+        min-width:100%;
+        height: 400px !important;
+    }
+  }
+  
+  
+  
